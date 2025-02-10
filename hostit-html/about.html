@@ -229,73 +229,101 @@
 <!-- history section -->
 <section class="history_section_css">
   <h2>История развития</h2>
-  <div class="timeline">
-    <!-- 1960-1970 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1960-1970 годы</h3>
-        <p>Развитие направления обеспечения информационной безопасности при создании образцов вооружения и военной техники и технической защиты информации в атомной отрасли промышленности началось на рубеже 60−70-х годов XX века. В системе мер по обеспечению комплексной безопасности при функционировании предприятий и организаций атомной отрасли промышленности в современных условиях одним из важнейших направлений является защита информации от иностранных технических разведок и от ее утечки по техническим каналам.</p>
-      </div>
-    </div>
+  <div class="history-buttons">
+    <button id="short-history-btn" class="active">Краткая история</button>
+    <button id="full-history-btn">Полная история</button>
+  </div>
 
-    <!-- 1969 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1969 год</h3>
-        <p>Начиная с 1969 г. Министерство среднего машиностроения СССР расширило круг своих задач по технической защите информации, начав реализацию мер защиты речевой акустической информации, а также технических средств обработки и передачи информации.</p>
+  <!-- Краткая история -->
+  <div id="short-history" class="history-content">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1960-1970 годы</h3>
+          <p>Развитие направления обеспечения информационной безопасности началось на рубеже 60−70-х годов XX века...</p>
+        </div>
       </div>
-    </div>
 
-    <!-- 1972 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1972 год</h3>
-        <p>На должность заместителя начальника 6 отдела по тематике технической защиты информации в 1972 г. был назначен Александр Петрович Волков (в дальнейшем, первый директор центра), переведенный в Минсредмаш из 8 Главного управления КГБ СССР.</p>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1969 год</h3>
+          <p>Министерство среднего машиностроения СССР расширило задачи по технической защите информации...</p>
+        </div>
       </div>
-    </div>
 
-    <!-- 1973 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1973 год</h3>
-        <p>Более пристальное внимание к проведению работ по ТЗИ стало уделяться после выхода постановления ЦК КПСС и совета министров СССР от 18.12.1973 № 903-303 «О мерах противодействия иностранным техническим разведкам».</p>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>1991 год</h3>
+          <p>Государственное предприятие Центр «Атомзащитаинформ» было создано в 1991 г.</p>
+        </div>
       </div>
-    </div>
 
-    <!-- 1974 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1974 год</h3>
-        <p>В Минсредмаше во исполнение указанного постановления во 2 управлении Министерства в 1974 году был создан отдел (9 отдел) для осуществления организации и координации в системе Министерства работ по обеспечению информационной безопасности при создании образцов вооружения и военной техники и технической защиты информации, начальником отдела назначен Александр Петрович Волков.</p>
-      </div>
-    </div>
-
-    <!-- 1991 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>1991 год</h3>
-        <p>Государственное предприятие Центр «Атомзащитаинформ» было создано в 1991 г. на базе отраслевого отдела (9 отдела 2 ГУ).</p>
-      </div>
-    </div>
-
-    <!-- 2019 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>2019 год</h3>
-        <p>В 2019 году ФГУП Центр «Атомзащитаинформ» было реорганизовано путем преобразования в акционерное общество «Научно-технический и сертификационный центр по комплексной защите информации» (АО Центр «Атомзащитаинформ»).</p>
-      </div>
-    </div>
-
-    <!-- 2020 -->
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>2020 год</h3>
-        <p>13.10.2020 решением единственного акционера на должность генерального директора назначен Селин Алексей Владимирович.</p>
+      <div class="timeline-item">
+        <div class="timeline-content">
+          <h3>2020 год</h3>
+          <p>13.10.2020 на должность генерального директора назначен Селин Алексей Владимирович.</p>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- Полная история -->
+  <div id="full-history" class="history-content" style="display: none;">
+    <p>
+      Развитие направления обеспечения информационной безопасности при создании образцов вооружения и военной техники...
+    </p>
+    <p>
+      В середине 60-х годов в отрасли начались работы по созданию автоматизированных систем управления предприятиями...
+    </p>
+    <p>
+      Государственное предприятие Центр «Атомзащитаинформ» было создано в 1991 г. на базе отраслевого отдела...
+    </p>
+  </div>
 </section>
-<!-- end history section -->
+
+<script>
+  document.getElementById("short-history-btn").addEventListener("click", function () {
+    document.getElementById("short-history").style.display = "block";
+    document.getElementById("full-history").style.display = "none";
+    this.classList.add("active");
+    document.getElementById("full-history-btn").classList.remove("active");
+  });
+
+  document.getElementById("full-history-btn").addEventListener("click", function () {
+    document.getElementById("short-history").style.display = "none";
+    document.getElementById("full-history").style.display = "block";
+    this.classList.add("active");
+    document.getElementById("short-history-btn").classList.remove("active");
+  });
+</script>
+
+<style>
+  .history-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .history-buttons button {
+    background-color: #03a7d3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .history-buttons button.active {
+    background-color: #013275;
+  }
+
+  .history-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+</style>
 
   <!-- info section -->
 
