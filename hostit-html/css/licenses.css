@@ -1,0 +1,85 @@
+/* Стили для раздела "Наши лицензии" */
+.licenses_section {
+  background-color: #f0f4f8; /* Светло-голубой фон для секции */
+  padding: 60px 0;
+}
+
+.licenses_section .heading_container {
+  text-align: center;
+  margin-bottom: 40px;
+  
+}
+
+.licenses_section .heading_container h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50; /* Темно-синий цвет для заголовка */
+}
+
+.licenses_section .heading_container p {
+  font-size: 18px;
+  color: #666;
+  margin-top: 10px;
+}
+
+
+
+.license_list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.license_item {
+  background: #ffffff; /* Белый фон для блоков */
+  border: 1px solid #e0e6ed; /* Светлая граница */
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для блоков */
+}
+
+.license_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #013275; /* Синий фон для заголовка  #3498db*/
+  color: #ffffff; /* Белый текст */
+  transition: background-color 0.3s ease;
+}
+
+.license_header:hover {
+  background-color: #2980b9; /* Темно-синий при наведении */
+}
+
+.license_header h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.license_header .toggle_icon {
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.license_content {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  background-color: #ffffff; /* Белый фон для контента */
+  color: #333; /* Темный текст */
+}
+
+.license_item.active .license_content {
+  padding: 20px;
+  max-height: 200px; /* Можно увеличить, если текст длиннее */
+}
+
+.license_item.active .toggle_icon {
+  transform: rotate(45deg);
+}

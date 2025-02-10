@@ -1,0 +1,82 @@
+/* Стили для секции партнеров */
+.partners-section {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.partners-section h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.partners-section .subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Сетка для логотипов партнеров */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partner-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-height: 200px; /* Например, задаем минимальную высоту */
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.partner-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.partner-logo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Анимация при появлении */
+.partner-logo {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767.98px) {
+  .partners-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .partner-logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}

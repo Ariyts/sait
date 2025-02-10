@@ -1,0 +1,93 @@
+/* Основные стили для секции FAQ */
+.about_section_css {
+  padding: 50px 0;
+  background-color: #f8f8f8; /* Светлый фон секции */
+}
+
+.detail-box {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* Стили для заголовка FAQ */
+.detail-box h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333; /* Темный цвет текста */
+  border-bottom: 2px solid #03a7d3; /* Акцентная линия под заголовком */
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.detail-box p {
+  font-size: 18px;
+  color: #555; /* Серый цвет текста */
+  margin-bottom: 40px;
+}
+
+/* Стили для вопросов */
+.kezudr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 18px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd; /* Серая линия между вопросами */
+  background-color: #fff; /* Белый фон для вопросов */
+  transition: background-color 0.3s ease;
+}
+
+.kezudr:hover {
+  background-color: #f1f1f1; /* Изменение фона при наведении */
+}
+
+.coOKCI {
+  margin: 0;
+  color: #333; /* Темный цвет текста */
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Стили для иконки стрелки */
+.PFeot {
+  display: inline-flex;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  
+}
+
+.dkLyTA {
+  transition: transform 0.2s ease-in-out;
+}
+
+.kezudr.active .dkLyTA {
+  transform: rotate(180deg); /* Поворот стрелки при открытии */
+}
+
+/* Стили для блока с ответом */
+.answer-box {
+  padding: 18px;
+  background-color: #f9f9f9; /* Светлый фон для ответа */
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #333; /* Темный цвет текста */
+  border-left: 4px solid #03a7d3; /* Акцентная линия слева */
+  animation: fadeIn 0.3s ease; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

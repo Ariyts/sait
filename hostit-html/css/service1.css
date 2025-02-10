@@ -1,0 +1,197 @@
+/* Общие стили для секций */
+.service1_detail_section,
+.service1_benefits_section {
+  padding: 30px 0;
+}
+
+.service1_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service1_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service1_col-md-6 {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+.service1_col-md-4 {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+/* Service Detail Section */
+.service1_detail-box h2 {
+  color: #013275; /* Темно-синий цвет */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service1_detail-box p {
+  color: #333; /* Темно-серый цвет */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service1_detail-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service1_detail-box ul li {
+  color: #333; /* Темно-серый цвет */
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service1_icon-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service1_icon-box i {
+  font-size: 4rem; /* Размер иконки */
+  color: #013275; /* Цвет иконки */
+}
+
+/* Benefits Section */
+.service1_benefits_section {
+  background-color: #f8f8f8; /* Светло-серый фон */
+}
+
+.service1_benefits_section .service1_box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Одинаковая высота для всех блоков */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Равномерное распределение контента */
+  transition: all 0.3s ease; /* Плавный переход для всех свойств */
+}
+
+/* Эффекты при наведении на блок */
+.service1_benefits_section .service1_box:hover {
+  background: #013275; /* Темно-синий фон */
+  transform: translateY(-10px); /* Легкий подъем блока */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Увеличенная тень */
+}
+
+.service1_benefits_section .service1_box:hover h4,
+.service1_benefits_section .service1_box:hover p,
+.service1_benefits_section .service1_box:hover .service1_icon-box i {
+  color: white; /* Белый текст при наведении */
+}
+
+.service1_benefits_section .service1_box h4 {
+  color: #013275; /* Темно-синий цвет */
+  font-size: 1.5rem;
+  margin: 20px 0;
+  transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+.service1_benefits_section .service1_box p {
+  color: #666; /* Серый цвет */
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease; /* Плавное изменение цвета текста */
+}
+
+.service1_benefits_section .service1_box .service1_icon-box i {
+  transition: color 0.3s ease; /* Плавное изменение цвета иконки */
+}
+
+/* Анимация для иконки */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.service1_benefits_section .service1_box:hover .service1_icon-box i {
+  animation: bounce 0.5s ease; /* Анимация подпрыгивания иконки */
+}
+
+/* Заголовки */
+.service1_heading_container h2 {
+  color: #013275; /* Темно-синий цвет */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Стили для модального окна */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #03a7d3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0288b1;
+}
+
+

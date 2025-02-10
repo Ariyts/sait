@@ -1,0 +1,115 @@
+/* Общие стили для секции контактов */
+.contact-info-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.contact-details {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Добавлено для одинаковой высоты */
+}
+
+.contact-details h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center; /* Выравнивание иконок и текста по центру */
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 15px;
+  flex-shrink: 0; /* Иконки не сжимаются */
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5; /* Улучшенный межстрочный интервал */
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Добавлено для одинаковой высоты */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767.98px) {
+  .contact-details {
+    margin-bottom: 30px; /* Отступ между контактами и картой на мобильных */
+  }
+}
+
+/* Стили для дополнительной секции */
+.additional-info-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.info-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.info-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.info-box h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.info-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 767.98px) {
+  .contact-details {
+    margin-bottom: 30px;
+  }
+
+  .info-box {
+    margin-bottom: 30px;
+  }
+}
