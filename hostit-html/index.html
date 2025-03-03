@@ -13,6 +13,10 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
 
+<!--Подключение буутстапа -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
   <title>Центр «Атомзащитаинформ»</title>
 
 
@@ -39,73 +43,63 @@
     <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          
-
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo_cazi.jpg" alt="Логотип АО Центр «Атомзащитаинформ»" class="logo">
+          </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ml-auto">
-              <a class="navbar-brand" href="index.html">
-                <img src="images/logo_cazi.jpg" alt="Логотип АО Центр «Атомзащитаинформ»" class="logo">
-              </a>
+            <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   О нас
                 </a>
-                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
                   <a class="dropdown-item" href="about.html">О компании</a>
                   <a class="dropdown-item" href="licenses.html">Наши лицензии</a>
                   <a class="dropdown-item" href="parthers.html">Наши заказчики</a>
                   <a class="dropdown-item" href="reporting.html">Отчетность</a>
                 </div>
               </li>
-            
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Услуги
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <a class="dropdown-item" href="service1.html">Аттестация объектов информатизации</a>
-                    <a class="dropdown-item" href="service2.html">Сертификация и сертификационные испытания средств защиты информации</a>
-                    <a class="dropdown-item" href="service3.html">Специальные экспертизы</a>
-                    <a class="dropdown-item" href="service4.html">Работы по обеспечению информационной безопасности при создании образцов В и ВТ</a>
-                    <a class="dropdown-item" href="service5.html">Проведение мероприятий по оценке защищённости</a>
-                    <a class="dropdown-item" href="service6.html">Информационные технологии</a>
-                  </div>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Поставщикам
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=news">Новости</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=currentorders&ostate=P">Закупки</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af23">Документы</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af33">Контроль и арбитраж</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af50">Обучение</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=eltorgi">Электронные закупки</a>
-                    <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=oprosy">Опросы и обсуждения</a>
-                    <a class="dropdown-item" href="https://www.rosatom.ru/vendors/">"Как стать поставщиком атомной отрасли"</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="faq.html">Вопросы-ответы</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Контакты</a>
-                </li>
-              </ul>
-             
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Услуги
+                </a>
+                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <a class="dropdown-item" href="service1.html">Аттестация объектов информатизации</a>
+                  <a class="dropdown-item" href="service2.html">Сертификация и сертификационные испытания средств защиты информации</a>
+                  <a class="dropdown-item" href="service3.html">Специальные экспертизы</a>
+                  <a class="dropdown-item" href="service4.html">Работы по обеспечению информационной безопасности при создании образцов В и ВТ</a>
+                  <a class="dropdown-item" href="service5.html">Проведение мероприятий по оценке защищённости</a>
+                  <a class="dropdown-item" href="service6.html">Информационные технологии</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="suppliersDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Поставщикам
+                </a>
+                <div class="dropdown-menu" aria-labelledby="suppliersDropdown">
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=news">Новости</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=currentorders&ostate=P">Закупки</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af23">Документы</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af33">Контроль и арбитраж</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=af50">Обучение</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=eltorgi">Электронные закупки</a>
+                  <a class="dropdown-item" href="https://zakupki.rosatom.ru/Web.aspx?node=oprosy">Опросы и обсуждения</a>
+                  <a class="dropdown-item" href="https://www.rosatom.ru/vendors/">"Как стать поставщиком атомной отрасли"</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">Вопросы-ответы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Контакты</a>
+              </li>
             </ul>
             <div class="quote_btn-container">
-              <form class="form-inline">
-               
-              </form>
-             
-              </a>
+              <!-- Если здесь планируется кнопка, добавьте её -->
             </div>
           </div>
         </nav>
@@ -454,10 +448,7 @@
   </footer>
   <!-- footer section -->
 
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  
   <!-- custom js -->
   <script src="js/custom.js"></script>
 <!-- kruj js -->
@@ -469,9 +460,11 @@
 <!-- custom js -->
 <script src="js/nubmer.js"></script>
 
+<!-- custom js -->
 
-
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
 
