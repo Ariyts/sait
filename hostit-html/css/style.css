@@ -1394,7 +1394,7 @@ a:focus {
   width: 100px; /* Настройте размер иконки по вашему усмотрению */
   height: 100px;
   position: absolute;
-  right: 20px; /* Отступ справа */
+  right: 1px; /* Отступ справа */
   top: 50%; /* Выравнивание по вертикали */
   transform: translateY(-50%); /* Центрирование по вертикали */
 }
@@ -1883,5 +1883,99 @@ a:focus {
 
   .custom_nav-container .navbar-nav .nav-item .nav-link {
     padding: 10px 0;
+  }
+}
+
+
+/* Базовые стили для ссылки внутри li */
+.service-list li a {
+  display: flex;
+  align-items: center; /* Вертикальное выравнивание текста и иконки */
+  justify-content: space-between; /* Текст слева, иконка справа */
+  padding: 16px 34px; /* Существующие отступы */
+  width: 100%;
+  height: 100%;
+}
+
+/* Стили для текстового блока */
+.service-list .service-text {
+  flex: 1; /* Текст занимает всё доступное пространство */
+  margin-right: 20px; /* Отступ между текстом и иконкой */
+}
+
+/* Стили для иконок */
+.service-list .service-icon {
+  width: 100px; /* Базовый размер для десктопа */
+  height: 100px;
+  transition: transform 0.3s ease; /* Плавное увеличение при наведении */
+}
+
+/* Эффект при наведении на иконку */
+.service-list li:hover .service-icon {
+  transform: scale(1.1); /* Увеличение при наведении */
+}
+
+/* Адаптация для экранов ≤768px (планшеты) */
+@media (max-width: 768px) {
+  .service-list li a {
+    flex-direction: column; /* Вертикальное расположение на мобильных */
+    align-items: flex-start; /* Выравнивание текста влево */
+    padding: 15px; /* Уменьшаем отступы */
+  }
+
+  .service-list .service-text {
+    margin-right: 0; /* Убираем отступ справа */
+    margin-bottom: 10px; /* Отступ снизу перед иконкой */
+  }
+
+  .service-list .service-icon {
+    width: 80px; /* Уменьшаем размер иконки */
+    height: 80px;
+    position: absolute; /* Убираем абсолютное позиционирование */
+    /* transform: none;  Сбрасываем transform */
+  }
+}
+
+/* Адаптация для экранов ≤375px (мобильные телефоны) */
+@media (max-width: 375px) {
+  .service-list li a {
+    padding: 10px; /* Ещё меньше отступов */
+  }
+
+  .service-list .service-icon {
+    width: 60px; /* Минимальный размер иконки */
+    height: 60px;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .server_section.dnTgdB {
+    width: 90%; /* Уменьшаем ширину до 90% */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0; /* Уменьшаем вертикальные отступы */
+  }
+  .ikgXQn {
+    padding: 30px 15px; /* Уменьшаем внутренние отступы */
+  }
+}
+
+@media (max-width: 375px) {
+  .info_section .info_detail p,
+  .info_section .info_links a {
+    font-size: 0.875rem; /* Уменьшаем шрифт для мобильных */
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  p {
+    font-size: 0.875rem;
   }
 }
