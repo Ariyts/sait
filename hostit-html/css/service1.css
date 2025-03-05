@@ -314,3 +314,304 @@ form button:hover {
   color: #721c24;
   border-color: #f5c6cb;
 }
+
+
+/* Общие стили для секций */
+.service1_detail_section {
+  padding: 30px 0;
+}
+
+.service1_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service1_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service1_col-md-6 {
+  flex: 0 0 calc(50% - 20px);
+  max-width: calc(50% - 20px);
+}
+
+/* Стили для текста и иконок */
+.service1_detail-box h2 {
+  color: #013275;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service1_detail-box p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.service1_detail-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service1_detail-box ul li {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.service1_icon-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.service1_icon-box i {
+  font-size: 4rem;
+  color: #013275;
+}
+
+.service1_contact-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.service1_contact-btn {
+  background-color: #013275;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service1_contact-btn:hover {
+  background-color: #0288b1;
+}
+
+/* Медиа-запросы для адаптивности */
+
+/* Планшеты (768px и меньше) */
+@media (max-width: 768px) {
+  .service1_col-md-6 {
+    flex: 0 0 100%; /* На планшетах блоки занимают всю ширину */
+    max-width: 100%;
+  }
+
+  .service1_icon-box i {
+    font-size: 3rem; /* Уменьшаем иконку */
+  }
+
+  .service1_detail-box h2 {
+    font-size: 1.75rem; /* Уменьшаем заголовок */
+  }
+
+  .service1_detail-box p,
+  .service1_detail-box ul li {
+    font-size: 0.95rem; /* Уменьшаем текст */
+  }
+
+  .service1_contact-btn {
+    padding: 8px 16px; /* Уменьшаем кнопку */
+    font-size: 0.9rem;
+  }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+  .service1_detail_section {
+    padding: 20px 0; /* Уменьшаем отступы */
+  }
+
+  .service1_container {
+    width: 95%; /* Увеличиваем ширину контейнера */
+  }
+
+  .service1_row {
+    gap: 15px; /* Уменьшаем промежуток между блоками */
+  }
+
+  .service1_detail-box h2 {
+    font-size: 1.5rem; /* Еще меньше заголовок */
+  }
+
+  .service1_detail-box p,
+  .service1_detail-box ul li {
+    font-size: 0.9rem; /* Еще меньше текст */
+  }
+
+  .service1_icon-box i {
+    font-size: 2.5rem; /* Еще меньше иконка */
+  }
+
+  .service1_contact-btn {
+    padding: 6px 12px; /* Еще меньше кнопка */
+    font-size: 0.85rem;
+  }
+}
+
+/* Benefits Section */
+.service1_benefits_section {
+  background-color: #f8f8f8;
+  padding: 30px 0;
+}
+
+.service1_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service1_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service1_col-md-4 {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+.service1_heading_container h2 {
+  color: #013275;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service1_box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.service1_box:hover {
+  background: #013275;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service1_box:hover h4,
+.service1_box:hover p,
+.service1_box:hover .service1_icon-box i {
+  color: white;
+}
+
+.service1_box h4 {
+  color: #013275;
+  font-size: 1.5rem;
+  margin: 20px 0;
+  transition: color 0.3s ease;
+}
+
+.service1_box p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.service1_icon-box {
+  text-align: center;
+}
+
+.service1_icon-box i {
+  font-size: 4rem;
+  color: #013275;
+  transition: color 0.3s ease;
+}
+
+/* Анимация для иконки */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.service1_box:hover .service1_icon-box i {
+  animation: bounce 0.5s ease;
+}
+
+/* Медиа-запросы для адаптивности */
+
+/* Планшеты (768px и меньше) */
+@media (max-width: 768px) {
+  .service1_col-md-4 {
+    flex: 0 0 calc(50% - 20px); /* Два блока в ряд */
+    max-width: calc(50% - 20px);
+  }
+
+  .service1_box h4 {
+    font-size: 1.3rem; /* Уменьшаем заголовок */
+  }
+
+  .service1_box p {
+    font-size: 0.95rem; /* Уменьшаем текст */
+  }
+
+  .service1_icon-box i {
+    font-size: 3rem; /* Уменьшаем иконку */
+  }
+
+  .service1_heading_container h2 {
+    font-size: 1.75rem; /* Уменьшаем заголовок секции */
+  }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+  .service1_benefits_section {
+    padding: 20px 0; /* Уменьшаем отступы */
+  }
+
+  .service1_col-md-4 {
+    flex: 0 0 100%; /* Один блок в ряд */
+    max-width: 100%;
+  }
+
+  .service1_container {
+    width: 95%; /* Увеличиваем ширину контейнера */
+  }
+
+  .service1_row {
+    gap: 15px; /* Уменьшаем промежуток между блоками */
+  }
+
+  .service1_box {
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .service1_box h4 {
+    font-size: 1.2rem; /* Еще меньше заголовок */
+  }
+
+  .service1_box p {
+    font-size: 0.9rem; /* Еще меньше текст */
+  }
+
+  .service1_icon-box i {
+    font-size: 2.5rem; /* Еще меньше иконка */
+  }
+
+  .service1_heading_container h2 {
+    font-size: 1.5rem; /* Еще меньше заголовок секции */
+  }
+}
+
+.service1_box {
+  min-height: 250px; /* Примерное значение */
+}
