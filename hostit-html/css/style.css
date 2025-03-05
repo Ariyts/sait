@@ -1401,7 +1401,7 @@ a:focus {
 
 .service-list li:hover .service-icon {
   transform: translateY(-50%) scale(1.1); /* Увеличение иконки при наведении */
-  transition: transform 0.3s ease;
+  
 }
 
 .client_section .box .detail-box {
@@ -1910,10 +1910,7 @@ a:focus {
   transition: transform 0.3s ease; /* Плавное увеличение при наведении */
 }
 
-/* Эффект при наведении на иконку */
-.service-list li:hover .service-icon {
-  transform: scale(1.1); /* Увеличение при наведении */
-}
+
 
 /* Адаптация для экранов ≤768px (планшеты) */
 @media (max-width: 768px) {
@@ -1979,3 +1976,17 @@ a:focus {
     font-size: 0.875rem;
   }
 }
+
+@media (max-width: 768px) {
+  .about_section h2 {
+    font-size: 1.5rem; /* Уменьшаем заголовок */
+  }
+  .about_section p {
+    font-size: 0.875rem; /* Уменьшаем текст */
+    margin-bottom: 0; /* Убираем лишние отступы */
+  }
+  .about_section .detail-box {
+    padding: 20px; /* Уменьшаем внутренние отступы */
+  }
+}
+
