@@ -113,3 +113,239 @@
     margin-bottom: 30px;
   }
 }
+
+/* Общие стили для секции контактов */
+.contact-info-section {
+  background-color: #f9f9f9;
+  padding: 60px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-details {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Одинаковая высота */
+}
+
+.contact-details h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-item i {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.contact-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Одинаковая высота */
+  min-height: 300px; /* Минимальная высота для карты */
+}
+
+/* Стили для дополнительной секции */
+.additional-info-section {
+  background-color: #fff;
+  padding: 60px 0;
+}
+
+.info-box {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.info-box i {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.info-box h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.info-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.info-box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Медиа-запросы для адаптивности */
+
+/* Планшеты (991px и меньше) */
+@media (max-width: 991.98px) {
+  .contact-info-section {
+    padding: 40px 0;
+  }
+
+  .contact-details {
+    margin-bottom: 30px; /* Отступ перед картой */
+  }
+
+  .map-container {
+    min-height: 250px; /* Уменьшаем высоту карты */
+  }
+
+  .additional-info-section {
+    padding: 40px 0;
+  }
+
+  .info-box {
+    margin-bottom: 30px; /* Отступ между блоками */
+  }
+}
+
+/* Планшеты и большие мобильные (767px и меньше) */
+@media (max-width: 767.98px) {
+  .contact-details {
+    padding: 20px;
+  }
+
+  .contact-details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .contact-item i {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .contact-item p {
+    font-size: 14px;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%; /* Один блок в ряд */
+    max-width: 100%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%; /* Один блок в ряд */
+    max-width: 100%;
+  }
+
+  .info-box i {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .info-box p {
+    font-size: 14px;
+  }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+  .contact-info-section {
+    padding: 30px 0;
+  }
+
+  .container {
+    width: 95%; /* Увеличиваем ширину контейнера */
+  }
+
+  .contact-details {
+    padding: 15px;
+  }
+
+  .contact-details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .contact-item {
+    margin-bottom: 10px;
+  }
+
+  .contact-item i {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .contact-item p {
+    font-size: 13px;
+  }
+
+  .map-container {
+    min-height: 200px; /* Еще меньше высота карты */
+  }
+
+  .additional-info-section {
+    padding: 30px 0;
+  }
+
+  .info-box {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .info-box i {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .info-box h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .info-box p {
+    font-size: 13px;
+  }
+}
