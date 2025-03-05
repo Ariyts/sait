@@ -1990,3 +1990,18 @@ a:focus {
   }
 }
 
+.mb-adaptive {
+  margin-bottom: 1rem; /* Отступ по умолчанию для мобильных */
+}
+
+@media (min-width: 768px) {
+  .mb-adaptive {
+    margin-bottom: 2rem; /* Отступ для планшетов и десктопов */
+  }
+}
+
+@media (min-width: 1200px) {
+  .mb-adaptive {
+    margin-bottom: 3rem; /* Отступ для больших экранов */
+  }
+}
