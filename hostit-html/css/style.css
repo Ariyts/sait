@@ -439,16 +439,18 @@ a:focus {
   font-weight: 600;
 }
 
-/* Стили для выпадающего меню */
+/* Показываем меню при наведении */
 .nav-item.dropdown:hover .dropdown-menu {
-  display: block; /* Показываем меню при наведении */
+  display: block;
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  transition: opacity 0.3s ease, visibility 0s ease 0.1s, transform 0.3s ease;
 }
 
+/* Скрываем меню по умолчанию */
 .dropdown-menu {
-  display: none; /* Скрываем меню по умолчанию */
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -460,7 +462,16 @@ a:focus {
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0s ease 0.1s, transform 0.3s ease;
+}
+
+/* Задержка при закрытии */
+.nav-item.dropdown .dropdown-menu {
+  transition-delay: 0s; /* Без задержки при открытии */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  transition-delay: 0.1s; /* Задержка 0.1 секунды при закрытии */
 }
 
 .dropdown-item {
@@ -2005,3 +2016,4 @@ a:focus {
     margin-bottom: 3rem; /* Отступ для больших экранов */
   }
 }
+
