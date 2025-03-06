@@ -1368,3 +1368,181 @@
     margin-bottom: 60px;
   }
 }
+
+/* Общие стили */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Values Section */
+.values_section_css {
+  background-color: #f8f8f8;
+  padding: 60px 0;
+  color: #000000;
+  text-align: center;
+}
+
+.values_section_css h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #03a7d3;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.value-box {
+  background-color: #013275; /* Предполагаем bg-trustBlue как #013275 */
+  border-radius: 20px;
+  padding: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрируем содержимое вертикально */
+  align-items: center; /* Центрируем содержимое горизонтально */
+  min-height: 220px; /* Фиксированная минимальная высота */
+  max-width: 100%; /* Ограничиваем ширину внутри колонки */
+}
+
+.value-box:hover {
+  background-color: #03a7d3;
+  transform: translateY(-10px);
+}
+
+.value-box h3 {
+  font-size: 20px; /* Уменьшен начальный размер шрифта для десктопа */
+  margin: 0 0 10px; /* Уменьшен отступ снизу */
+  color: #ffffff; /* Предполагаем text-trustWhite как #ffffff */
+  font-weight: bold;
+  text-align: center; /* Выравнивание по центру */
+  width: 100%; /* Полная ширина для корректного центрирования */
+}
+
+.value-box p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ffffff;
+  margin: 0; /* Убираем лишние отступы */
+  max-width: 100%; /* Ограничиваем ширину текста */
+}
+
+/* Bootstrap утилиты */
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+}
+
+/* Медиа-запросы для адаптивности */
+
+/* Планшеты (991px и меньше) */
+@media (max-width: 991.98px) {
+  .values_section_css {
+    padding: 50px 0;
+  }
+
+  .col-md-4 {
+    flex: 0 0 100%; /* Один блок в ряд */
+    max-width: 100%;
+  }
+
+  .value-box {
+    min-height: 200px; /* Уменьшаем высоту */
+  }
+}
+
+/* Планшеты и большие мобильные (768px и меньше) */
+@media (max-width: 768px) {
+  .values_section_css {
+    padding: 40px 15px;
+  }
+
+  .values_section_css h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .value-box {
+    padding: 15px;
+    min-height: 180px; /* Уменьшаем высоту */
+  }
+
+  .value-box h3 {
+    font-size: 18px; /* Уменьшаем шрифт */
+    margin-bottom: 8px;
+  }
+
+  .value-box p {
+    font-size: 14px;
+  }
+}
+
+/* Мобильные устройства (480px и меньше) */
+@media (max-width: 480px) {
+  .values_section_css {
+    padding: 30px 10px;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .values_section_css h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .value-box {
+    padding: 12px;
+    min-height: 160px; /* Уменьшаем высоту */
+  }
+
+  .value-box h3 {
+    font-size: 16px; /* Уменьшаем шрифт для длинных слов */
+    margin-bottom: 6px;
+  }
+
+  .value-box p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .mt-5 {
+    margin-top: 2rem !important;
+  }
+
+  .mb-4 {
+    margin-bottom: 1rem !important;
+  }
+}
+
+/* Специфично для разрешения 375px и меньше */
+@media (max-width: 375px) {
+  .values_section_css {
+    padding: 25px 10px;
+  }
+
+  .values_section_css h2 {
+    font-size: 22px;
+  }
+
+  .value-box {
+    padding: 10px;
+    min-height: 150px; /* Фиксируем высоту */
+  }
+
+  .value-box h3 {
+    font-size: 14px; /* Уменьшаем шрифт для "Клиентоориентированность" */
+    margin-bottom: 4px;
+  }
+
+  .value-box p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+}
