@@ -118,12 +118,8 @@
             Мы обеспечиваем надежную защиту данных от утечек и несанкционированного доступа, используя передовые технологии и методы.
           </p>
           <div class="btn-box">
-            <a href="" class="btn-1">
-              Подробнее
-            </a>
-            <a href="" class="btn-2">
-              Связаться с нами
-            </a>
+            <a href="#" class="btn-1" onclick="openModal()">Подробнее</a>
+            <a href="#" class="btn-2" onclick="openModal()">Связаться с нами</a>
           </div>
         </div>
       </div>
@@ -141,7 +137,34 @@
 </section>
 <!-- end slider section -->
   </div>
- 
+
+  <!-- Модальное окно -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Связаться с нами</h2>
+      <!-- Блок для уведомлений -->
+      <div id="notification" style="display: none; margin-bottom: 20px; padding: 10px; background-color: #d4edda; color: #155724; border-radius: 5px;">
+        Спасибо! Письмо отправлено.
+      </div>
+      <form id="contactForm" action="send_email.php" method="POST">
+        <label for="name">ФИО:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="note">Примечание:</label>
+        <textarea id="note" name="note" rows="4" required></textarea>
+        
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+  
   <!-- service section -->
 
 <!-- кубы с информацией -->
@@ -461,6 +484,7 @@
 <script src="js/nubmer.js"></script>
 
 <!-- custom js -->
+<script src="js/window-main.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
