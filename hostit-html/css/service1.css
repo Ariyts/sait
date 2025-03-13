@@ -616,3 +616,100 @@ form button:hover {
   min-height: 250px; /* Примерное значение */
 }
 
+
+/* Обновление заголовков */
+.service1_heading_container h2 {
+  color: #013275;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.service1_heading_container p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Стили для списка услуг */
+.service1_detail-box ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+
+.service1_detail-box ul li:before {
+  content: "✔";
+  color: #03a7d3;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Увеличение иконок и их анимация */
+.service1_icon-box i {
+  font-size: 5rem;
+  transition: transform 0.3s ease;
+}
+
+.service1_icon-box:hover i {
+  transform: scale(1.1);
+}
+
+/* Кнопка CTA */
+.service1_contact-btn {
+  background-color: #03a7d3;
+  padding: 12px 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service1_contact-btn:hover {
+  background-color: #013275;
+  transform: translateY(-2px);
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 768px) {
+  .service1_heading_container h2 {
+    font-size: 2rem;
+  }
+  .service1_icon-box i {
+    font-size: 4rem;
+  }
+}
+
+/* Стили для подзаголовка "Что мы предлагаем?" */
+.service1_subheading {
+  color: #013275; /* Темно-синий цвет, как у основного заголовка */
+  font-size: 1.75rem; /* Чуть меньше, чем основной заголовок */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Стили для текста под иконкой "Ваши данные под надежной защитой" */
+.service1_icon-text {
+  color: #013275; /* Темно-синий цвет */
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+/* Убедимся, что общий фон остается читаемым */
+.service1_detail_section {
+  background-color: #fff; /* Белый фон для всей секции */
+}
+
+/* Если нужно скорректировать основной текст, оставим его темно-серым */
+.service1_detail-box p {
+  color: #333; /* Темно-серый для обычного текста */
+}
+
+/* Существующие стили для заголовка */
+.service1_heading_container h2 {
+  color: #013275;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
