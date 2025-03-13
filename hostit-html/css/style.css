@@ -1782,18 +1782,13 @@ a:focus {
 
 /* Кнопка toggler (гамбургер-меню) */
 .navbar-toggler {
-  border: 2px solid #013275; /* Тёмно-синяя обводка для контраста */
   padding: 5px;
   background-color: #ffffff; /* Белый фон для видимости */
   border-radius: 5px;
   transition: all 0.3s ease; /* Плавный переход */
 }
 
-.navbar-toggler:hover,
-.navbar-toggler:focus {
-  background-color: #03a7d3; /* Голубой фон при наведении */
-  border-color: #03a7d3;
-}
+
 
 
 /* Иконка гамбургер-меню */
